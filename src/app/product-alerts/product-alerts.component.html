@@ -1,5 +1,11 @@
 <h3> CHILD </h3>
 
 <p *ngIf="productAlert.price > 700">
-  <button (click)="onHandleClick()">Notify Me</button>
+  
+  <!-- <button (click)="notifyAlert.emit()">Notify Me List</button>
+  -
+  <button (click)="onHandleClick()">Notify Me Alert</button> -->
+
+  <button (click)="notifyAlert.emit(); onHandleClick()">Notify Me</button>
+
 </p>

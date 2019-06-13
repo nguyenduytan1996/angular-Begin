@@ -17,7 +17,7 @@ export class ProductAlertsComponent implements OnInit {
   }
 
   onHandleClick() {
-    window.alert('TEST -------');
+    window.alert('TEST ---> Alert <---');
   }
 
 }
