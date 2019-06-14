@@ -9,6 +9,7 @@ import { productsDanhSach } from '../productsDanhSach';
 })
 export class ProductListComponent {
   productsList_Attri = productsDanhSach;
+  soChin:number = 9;
 
   shareList() {
     window.alert('Gọi hàm Share - LIST \n The product has been shared!');
