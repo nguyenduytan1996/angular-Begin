@@ -3,7 +3,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-product-alerts',
   templateUrl: './product-alerts.component.html',
-  styleUrls: ['./product-alerts.component.css']
+  styleUrls: ['./product-alerts.component.css'],
+  providers: [ ProductAlertsComponent ]
 })
 export class ProductAlertsComponent implements OnInit {
 
@@ -17,7 +18,8 @@ export class ProductAlertsComponent implements OnInit {
   }
 
   onHandleClick() {
-    window.alert('TEST ---> Alert <---');
+    window.alert('--- TEST ---> ALERT <---');
+    this.notifyAlert.emit();
   }
 
 }

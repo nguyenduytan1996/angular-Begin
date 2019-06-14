@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 import { productsDanhSach } from '../productsDanhSach';
 
@@ -17,4 +17,9 @@ export class ProductListComponent {
   onNotifyList() {
     window.alert('Gọi hàm onNotify - LIST \n You will be notified when the product goes on sale');
   }
+
+  nullFunction_List() {
+    window.alert('--- NULL LIST ---');
+  }
+
 }
