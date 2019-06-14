@@ -18,8 +18,8 @@ export class ProductAlertsComponent implements OnInit {
   }
 
   onHandleClick() {
-    window.alert('--- TEST ---> ALERT <---');
     this.notifyAlert.emit();
+    window.alert('--- TEST ---> ALERT <---');
   }
 
 }
