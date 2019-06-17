@@ -18,5 +18,5 @@ export class ProductDetailsComponent implements OnInit {
     this.productDetail = productsDanhSach[+params.get('productId')];
   });
   }
-
+  // 
 }
